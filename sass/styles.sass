@@ -51,8 +51,17 @@ body
                     color: variables.$secondary-color
 
                 a 
+                    background-image: linear-gradient(transparent 0%, transparent 90%, variables.$secondary-color 90%, variables.$secondary-color 100%)
+                    background-repeat: no-repeat
+                    background-size: 0% 100%
+                    background-position-x: right
+                    transition: background-size 0.3s
+
                     &:hover
                         color: variables.$secondary-color
+
+                        background-size: 100% 100%
+                        background-position-x: left
 
     &-social-media
         ul
